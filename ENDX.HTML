@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Mohammed Halabi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            border: 2px solid black;
+            padding: 50px;
+            display: inline-block;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            background: linear-gradient(to right, #f0f8ff, #e0e0e0); /* تحديد لون الخلفية بشكل تدرجي */
+        }
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            font-size: 56px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        h1:hover {
+            transform: scale(1.1);
+        }
+        .button-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .button {
+            display: inline-block;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            border-radius: 15px; /* تعديل زوايا الزر */
+            font-size: 24px;
+            border: none;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        .button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+        }
+        .whatsapp {
+            background-color: #25D366; /* لون واتساب */
+        }
+        .telegram {
+            background-color: #0088cc; /* لون التلغرام */
+        }
+        .instagram {
+            background-color: #C13584; /* لون الانستغرام */
+        }
+        .facebook {
+            background-color: #4267B2; /* لون فيسبوك */
+        }
+        .twitter {
+            background-color: #1DA1F2; /* لون تويتر */
+        }
+        .email {
+            background-color: #DB4437; /* لون البريد الإلكتروني (مستوحى من شعار الجيميل) */
+        }
+        .x {
+            background-color: #4a4a4a; /* لون زر اكس */
+        }
+        .button span {
+            position: relative;
+            z-index: 1;
+        }
+        .button i {
+            margin-right: 10px;
+        }
+        .button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s, opacity 0.3s;
+            z-index: -1;
+            border-radius: 50px;
+            transform: scale(0.8);
+            opacity: 0;
+        }
+        .button:hover::before {
+            transform: scale(2);
+            opacity: 1;
+        }
+        .thank-you {
+            margin-top: 40px;
+            font-size: 26px;
+            color: #555;
+        }
+        .contact-text {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mohammed Halabi</h1>
+        <p class="contact-text">تواصل معنا عبر :</p>
+        <div class="button-wrapper">
+            <a href="https://wa.me/+352681137432" class="button whatsapp"><span><i class="fab fa-whatsapp"></i>واتساب</span></a>
+            <a href="https://t.me/mohammedhalabi0" class="button telegram"><span><i class="fab fa-telegram-plane"></i>التلغرام</span></a>
+            <a href="https://instagram.com/mohammed.halabi0?igshid=ZGUzMzM3NWJiOQ==" class="button instagram"><span><i class="fab fa-instagram"></i>الانستغرام</span></a>
+            <a href="https://www.facebook.com/profile.php?id=100026370490984" class="button facebook"><span><i class="fab fa-facebook-f"></i>فيسبوك</span></a>
+            <a href="https://twitter.com/1mohammedhalabi?s=09" class="button x"><span><i class="fab fa-twitter"></i>اكس X</span></a>
+            <a href="mailto:mohammedhalbi@gmail.com" class="button email"><span><i class="fas fa-envelope"></i>البريد الالكتروني</span></a>
+        </div>
+        <p class="thank-you">شكرا لكم!</p>
+    </div>
+    <script>
+        // JavaScript code can go here if needed
+    </script>
+</body>
+</html>
+
